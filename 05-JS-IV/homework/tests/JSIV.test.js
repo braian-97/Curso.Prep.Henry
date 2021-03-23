@@ -222,8 +222,8 @@ describe('agregarMetodoCalculoDescuento(storeItem)', function() {
   };
 
   it('should add the method \'calcularPrecioDescuento\' to the store item object', function() {
-    expect(agregarMetodoCalculoDescuento(storeItem).calcularPrecioDescuento).toBeDefined();
-    expect(agregarMetodoCalculoDescuento(storeItem2).calcularPrecioDescuento).toBeDefined();
+    expect(agregarMetodoCalculoDescuento(storeItem).calcularPrecioDescuento()).toBeDefined();
+    expect(agregarMetodoCalculoDescuento(storeItem2).calcularPrecioDescuento()).toBeDefined();
   });
   it('should return the discount precio from the new \'precioConDescuento\' method', function() {
     expect(agregarMetodoCalculoDescuento(storeItem).calcularPrecioDescuento()).toBe(72);
